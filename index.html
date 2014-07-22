@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="author" content="ray hasthimuni" />
+    <meta name="decscription" content="Swinburne Online Assesment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3><b>Activity</b></h3>
+                <p>Place Each statement into the correct column</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><b>Column A</b>
+                            </div>
+                            <div class="panel-body panel-body-custom" data-dropZone="enabled" data-zone="colA">
+                                <ul>
+
+                                </ul>
+                            </div>
+                            <!--close panel-body-left-->
+
+                        </div>
+                        <!--close panel-left-->
+
+                    </div>
+                    <!--close col-6-left-->
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><b>Column B</b>
+                            </div>
+                            <div class="panel-body panel-body-custom" data-dropZone="enabled" data-zone="colB">
+                                <ul>
+
+                                </ul>
+                            </div>
+                            <!--close panel-body-right-->
+                        </div>
+                        <!--close panel-right-->
+                    </div>
+                    <!--close col-6-right-->
+                </div>
+                <!--close row 1-->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary" id="resetA">Reset Column A</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary" id="resetB">Reset Column B</button>
+                    </div>
+
+                </div>
+
+                <h3>Statements</h3>
+                <div class="row" data-container="statements">
+                    <div class="col-md-4">
+                        <ul class="list-group" data-main-list="list1">
+                            <li class="list-group-item" data-draggable="enabled" data-group="colA" data-list="list1">This goes in Column A</li>
+                            <li class="list-group-item" data-draggable="enabled" data-group="colB" data-list="list1">This goes in Column B</li>
+                            <li class="list-group-item" data-draggable="enabled" data-group="colA" data-list="list1">This goes in Column A</li>
+                        </ul>
+                    </div>
+                    <!--close col-mid-4-left-->
+                    <div class="col-md-4">
+                        <ul class="list-group" data-main-list="list2">
+                            <li class="list-group-item" data-draggable="enabled" data-group="colB" data-list="list2">This goes in Column B</li>
+                            <li class="list-group-item" data-draggable="enabled" data-group="colA" data-list="list2">This goes in Column A</li>
+                            <li class="list-group-item" data-draggable="enabled" data-group="colB" data-list="list2">This goes in Column B</li>
+                        </ul>
+                    </div>
+                    <!--close col-mid-4-center-->
+                    <div class="col-md-4">
+                        <ul class="list-group" data-main-list="list3">
+                            <li class="list-group-item" data-draggable="enabled" data-group="colB" data-list="list3">This goes in Column B</li>
+                            <li class="list-group-item" data-draggable="enabled" data-group="colA" data-list="list3">This goes in Column A</li>
+                            <li class="list-group-item" data-draggable="enabled" data-group="colB" data-list="list3">This goes in Column B</li>
+                        </ul>
+                    </div>
+                    <!--close col-mid-4-right-->
+                </div>
+                <!--close row 2-->
+
+                <button type="button" class="btn btn-primary" id="resetAll">Rest Column A &amp; B</button>
+
+            </div>
+            <!--close main-panel-body-->
+        </div>
+        <!--close main-panel-->
+    </div>
+    <!--close container-->
+
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+<!--close body-->
+
+</html>
